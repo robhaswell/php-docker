@@ -5,3 +5,4 @@ RUN apt-get -qy upgrade
 RUN apt-get -qy install nginx
 ADD server.conf /etc/nginx/sites-enabled/server.conf
 CMD nginx -g 'daemon off;'
+EXPOSE 8080

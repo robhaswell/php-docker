@@ -1,0 +1,8 @@
+fpm:
+    build: fpm
+nginx:
+    build: nginx
+    links:
+        - fpm:fpm
+    ports:
+        - "80:8080"
